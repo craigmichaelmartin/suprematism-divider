@@ -12,7 +12,7 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 var common_1 = require('@angular/common');
-var repo_name_component_1 = require('./divider.component');
+var divider_component_1 = require('./divider.component');
 var core_1 = require('@angular/core');
 __export(require('./divider.component'));
 var DividerModule = (function () {
@@ -24,13 +24,13 @@ var DividerModule = (function () {
                 common_1.CommonModule,
             ],
             declarations: [
-                repo_name_component_1.DividerComponent,
+                divider_component_1.DividerComponent,
             ],
             exports: [
-                repo_name_component_1.DividerComponent,
+                divider_component_1.DividerComponent,
             ],
             entryComponents: [
-                repo_name_component_1.DividerComponent,
+                divider_component_1.DividerComponent,
             ]
         }), 
         __metadata('design:paramtypes', [])
