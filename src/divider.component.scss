@@ -1,0 +1,27 @@
+.Divider {
+  display: block;
+  position: absolute;
+  width: 6px;
+}
+.Divider.is-resizable {
+  cursor: col-resize;
+}
+.Divider .segment {
+  display: block;
+  position: absolute;
+  width: 6px;
+  background-color: #7fc2e4;
+}
+.Divider .first {
+  height: 26px;
+}
+.Divider .second {
+  margin-top: -10px;
+  height: calc(100% - 114px);
+}
+.Divider svg {
+  margin-top: 20px;
+}
+.Divider .only {
+  height: 100%;
+}

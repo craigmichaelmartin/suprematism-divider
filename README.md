@@ -26,18 +26,25 @@ we must manually run the publish prehook and save the files.
 A component for a divider.
 
 ##### Directives
-- Any Directives?
+- `position: Position` - an object of the type {top: string, left: string} specifing the initial position (mandatory)
+- `isResizable: boolean` - specifies whether or no the divider is draggable (optional, defaults to true)
+- `rightArrow: boolean` - specifies whether or no the divider has a right arrow (optional, defaults to true)
 
 ##### Events
-- Any Events
+- `leftUpdated: string` - specifies the dynamic left position
+- `isResizing: boolean` - specifies whether or no the divider is being dragged (moused down on)
 
 
 ## States
 - The divider component has these states:
+  - `is-resizable`: whether the component is draggable
 
 
 ## Example
 ```html
-<supre-divider>
-</supre-divider>
+<supre-divider
+  [position]="{top: '0px', left: '50vw'}"
+  [rightArrow]="false"
+  [isResizable]="false"
+></supre-divider>
 ```
