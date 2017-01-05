@@ -1,3 +1,5 @@
+$blue-light: rgb(127, 194, 228);
+
 .Divider {
   display: block;
   position: absolute;
@@ -21,6 +23,14 @@
 }
 .Divider svg {
   margin-top: 20px;
+}
+.Divider line {
+  stroke: $blue-light;
+  stroke-width: 6
+}
+.Divider polygon {
+  stroke: white;
+  fill: white;
 }
 .Divider .only {
   height: 100%;
