@@ -22,5 +22,13 @@
 .Divider svg {
   margin-top: 20px; }
 
+.Divider line {
+  stroke: #7fc2e4;
+  stroke-width: 6; }
+
+.Divider polygon {
+  stroke: white;
+  fill: white; }
+
 .Divider .only {
   height: 100%; }
