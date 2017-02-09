@@ -1,9 +1,10 @@
-$blue-light: rgb(127, 194, 228);
+@import '../node_modules/suprematism-style-guide/dist/utils/colors';
 
 .Divider {
   display: block;
   position: absolute;
-  width: 6px;
+  width: 4px;
+  border-left: 20px solid $white;
 }
 .Divider.is-resizable {
   cursor: col-resize;
@@ -11,22 +12,22 @@ $blue-light: rgb(127, 194, 228);
 .Divider .segment {
   display: block;
   position: absolute;
-  width: 6px;
-  background-color: #7fc2e4;
+  width: 4px;
+  background-color: $gray;
 }
 .Divider .first {
   height: 26px;
 }
 .Divider .second {
-  margin-top: -10px;
+  margin-top: -5px;
   height: calc(100% - 114px);
 }
 .Divider svg {
   margin-top: 20px;
 }
 .Divider line {
-  stroke: $blue-light;
-  stroke-width: 6
+  stroke: $gray;
+  stroke-width: 4
 }
 .Divider polygon {
   stroke: white;
