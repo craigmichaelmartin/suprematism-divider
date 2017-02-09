@@ -1,7 +1,15 @@
+/**
+ * Design Reference:
+ * https://cacoo.com/diagrams/88x93Ppap4rtGUhs#5F65C
+ */
+/**
+ * Collection of the colors
+ */
 .Divider {
   display: block;
   position: absolute;
-  width: 6px; }
+  width: 4px;
+  border-left: 20px solid #ffffff; }
 
 .Divider.is-resizable {
   cursor: col-resize; }
@@ -9,22 +17,22 @@
 .Divider .segment {
   display: block;
   position: absolute;
-  width: 6px;
-  background-color: #7fc2e4; }
+  width: 4px;
+  background-color: #d5d8dd; }
 
 .Divider .first {
   height: 26px; }
 
 .Divider .second {
-  margin-top: -10px;
+  margin-top: -5px;
   height: calc(100% - 114px); }
 
 .Divider svg {
   margin-top: 20px; }
 
 .Divider line {
-  stroke: #7fc2e4;
-  stroke-width: 6; }
+  stroke: #d5d8dd;
+  stroke-width: 4; }
 
 .Divider polygon {
   stroke: white;
