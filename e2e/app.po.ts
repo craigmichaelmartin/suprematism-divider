@@ -1,7 +1,6 @@
 import { browser, element, by } from 'protractor';
 
 export class SuprematismDividerPage {
-
   navigateTo() {
     return browser.get('/');
   }

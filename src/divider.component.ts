@@ -1,4 +1,12 @@
-import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, Output, ViewChild } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnDestroy,
+  Output,
+  ViewChild,
+  OnInit
+} from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/fromEvent';
 import 'rxjs/add/observable/of';
@@ -18,10 +26,10 @@ export interface PositionI {
 
 @Component({
   selector: 'supre-divider',
-  template: require('./divider.component.html'),
-  styles: [require('./divider.component.css')]
+  templateUrl: './divider.component.html',
+  styleUrls: ['./divider.component.scss']
 })
-export class DividerComponent implements AfterViewInit, OnDestroy {
+export class DividerComponent implements OnInit, OnDestroy {
 
   // ------ Properties --------------------------------------------------------
 
@@ -29,8 +37,8 @@ export class DividerComponent implements AfterViewInit, OnDestroy {
   left$: Observable<string>;
   mouseMove$: Observable<any>;
   mouseDown$: Observable<boolean>;
-  @Input() isResizable: boolean = true;
-  @Input() rightArrow: boolean = true;
+  @Input() isResizable = true;
+  @Input() rightArrow = true;
   @Input() position: PositionI;
   @Output() leftUpdated = new EventEmitter();
   @Output() isResizing = new EventEmitter();
@@ -39,7 +47,7 @@ export class DividerComponent implements AfterViewInit, OnDestroy {
 
   // ------ Lifecycle Hooks ---------------------------------------------------
 
-  ngAfterViewInit() {
+  ngOnInit() {
     if (this.isResizable) {
       this.setUpResize();
     } else {

@@ -1,6 +1,6 @@
 import { SuprematismDividerPage } from './app.po';
 
-describe('suprematism-divider App', function() {
+describe('suprematism-divider App', () => {
   let page: SuprematismDividerPage;
 
   beforeEach(() => {
